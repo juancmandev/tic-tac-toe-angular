@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BoardContainer } from './board.container';
+import { SquareModule } from 'src/components/square/square.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SquareModule
   ],
   declarations: [
     BoardContainer

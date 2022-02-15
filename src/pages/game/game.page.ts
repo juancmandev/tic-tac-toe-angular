@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-game',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./game.page.scss']
 })
 export class GamePage {
-  
+  @ViewChild('Board') Board!: ElementRef;
 }
