@@ -1,0 +1,33 @@
+@import 'src/assets/scss/varss';
+
+.scoreaboard-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.current-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $quaternary;
+}
+
+.player {
+  font-size: 2rem;
+}
+
+.player-x {
+  color: #4aadff;
+}
+
+.player-o {
+  color: #33e79e;
+}
+
+.board-container {
+  margin: 20px auto;
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

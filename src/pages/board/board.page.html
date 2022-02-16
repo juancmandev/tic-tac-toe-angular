@@ -1,0 +1,15 @@
+<header class="scoreaboard-container">
+  <h1 *ngIf="!winner" class="current-player">
+    Current Player:&nbsp;&nbsp;
+    <span class="{{ xIsNext ? 'player-o' : 'player-x' }} player">
+      {{ player }}
+    </span>
+  </h1>
+  <h1 *ngIf="winner" class="current-player">
+    Player &nbsp; <span class="{{ xIsNext ? 'player-x' : 'player-o' }} player">{{ player === 'X' ? 'O' : 'X' }}</span> &nbsp; wins!
+  </h1>
+  <button nbButton outline status="danger" (click)="newGame()">Start new Game</button>
+</header>
+<section class="board-container">
+  <app-square *ngFor="let square of squares, let i = index" [value]="square" (click)="makeMove(i)"></app-square>
+</section>

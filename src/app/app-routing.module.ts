@@ -7,8 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('src/pages/home/home.module').then(m => m.HomeModule)
   },
   {
-    path: 'game',
-    loadChildren: () => import('src/pages/game/game.module').then(m => m.GameModule)
+    path: 'board',
+    loadChildren: () => import('src/pages/board/board.module').then(m => m.BoardModule)
   }
 ];
 

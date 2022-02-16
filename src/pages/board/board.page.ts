@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-board',
-  templateUrl: './board.container.html',
-  styleUrls: ['./board.container.scss']
+  templateUrl: './board.page.html',
+  styleUrls: ['./board.page.scss']
 })
-export class BoardContainer implements OnInit {
+export class BoardPage implements OnInit {
   squares!: any[];
   xIsNext!: boolean;
   winner!: string;
