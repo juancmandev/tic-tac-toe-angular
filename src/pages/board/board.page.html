@@ -6,7 +6,7 @@
     </span>
   </h1>
   <h1 *ngIf="winner" class="current-player">
-    Player &nbsp; <span class="{{ xIsNext ? 'player-x' : 'player-o' }} player">{{ player === 'X' ? 'O' : 'X' }}</span> &nbsp; wins!
+    Player &nbsp; <span class="{{ winner === 'X' ? 'player-o' : 'player-x' }} player">{{ winner }}</span> &nbsp; wins!
   </h1>
   <button nbButton outline status="danger" (click)="newGame()">
     Start new Game

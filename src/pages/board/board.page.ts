@@ -31,6 +31,7 @@ export class BoardPage implements OnInit {
     }
 
     this.winner = this.calculateWinner();
+    console.log(this.winner)
   }
 
   calculateWinner() {
