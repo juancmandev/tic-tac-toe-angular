@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "tic-tac-toe-angular-28723": {
+      "hosting": {
+        "public": "dist/tic-tac-toe-angular",
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ],
+        "tic-tac-toe-angular": [
+          "tic-tac-toe-angular-28723"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tic-tac-toe-angular-28723"
+  }
+}
