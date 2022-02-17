@@ -27,10 +27,10 @@ export class BoardPage implements OnInit {
   makeMove(index: number) {
     if (!this.squares[index]) {
       this.squares.splice(index, 1, this.player);
-      this.xIsNext = !this.xIsNext; 
+      this.xIsNext = !this.xIsNext;
     }
 
-    this.winner = this.calculateWinner(); 
+    this.winner = this.calculateWinner();
   }
 
   calculateWinner() {
@@ -44,7 +44,6 @@ export class BoardPage implements OnInit {
       [0, 4, 8],
       [2, 4, 6]
     ];
-
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       if (
@@ -55,7 +54,6 @@ export class BoardPage implements OnInit {
         return this.squares[a];
       }
     }
-
     return null;
   }
 }

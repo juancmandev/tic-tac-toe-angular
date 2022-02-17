@@ -8,7 +8,9 @@
   <h1 *ngIf="winner" class="current-player">
     Player &nbsp; <span class="{{ xIsNext ? 'player-x' : 'player-o' }} player">{{ player === 'X' ? 'O' : 'X' }}</span> &nbsp; wins!
   </h1>
-  <button nbButton outline status="danger" (click)="newGame()">Start new Game</button>
+  <button nbButton outline status="danger" (click)="newGame()">
+    Start new Game
+  </button>
 </header>
 <section class="board-container">
   <app-square *ngFor="let square of squares, let i = index" [value]="square" (click)="makeMove(i)"></app-square>
